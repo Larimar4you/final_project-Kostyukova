@@ -10,7 +10,7 @@ ax.axis("off")
 
 image = ax.imshow(
     np.zeros((HEIGHT, WIDTH)),
-    cmap="turbo",  # 🔥 красивая палитра
+    cmap="turbo",
     vmin=0,
     vmax=MAX_ITER,
     animated=True,
@@ -40,7 +40,7 @@ def mandelbrot(frame):
 def update(frame):
     data = mandelbrot(frame)
 
-    data = np.rot90(data)  # ⟲ 90° против часовой стрелки
+    data = np.rot90(data)
 
     image.set_array(data)
     return [image]
