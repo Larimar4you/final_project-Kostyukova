@@ -55,3 +55,18 @@ plt.show()
 print(f"{'Sum':<5}{'Monte Carlo':<15}{'Analytical'}")
 for s in range(2, 13):
     print(f"{s:<5}{mc_probabilities[s]:<15.4f}{analytical_probabilities[s]:.4f}")
+
+"""
+Sum  Monte Carlo    Analytical
+2    0.0268         0.0278
+3    0.0545         0.0556
+4    0.0841         0.0833
+5    0.1123         0.1111
+6    0.1403         0.1389
+7    0.1656         0.1667
+8    0.1402         0.1389
+9    0.1115         0.1111
+10   0.0818         0.0833
+11   0.0551         0.0556
+12   0.0278         0.0278
+"""
